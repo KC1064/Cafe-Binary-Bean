@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;;
+}
+.all-content {
+    background: rgb(145,97,39);
+    background: linear-gradient(45deg, rgba(145,97,39,1) 0%, rgba(238,225,146,1) 50%, rgba(0,0,0,1) 100%);
+
+}
+html ::-webkit-scrollbar-track {
+    background: transparent;
+}
+html ::-webkit-scrollbar-thumb {
+    background: gold;
+    border-radius: 10px;
+}
+html ::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Navbar Starts */
+#navbar {
+    background: rgb(145,97,39);
+    background: linear-gradient(45deg, rgba(145,97,39,1) 0%, rgba(238,225,146,1) 50%, rgba(0,0,0,1) 100%);
+}
+
+#logo img{
+    border-radius: 12px;
+    width: 190px;
+    margin-left: 40px;
+}
+.navbar-nav {
+    margin-left: 50px;
+}
+.nav-item .nav-link {
+    color: black;
+    margin-left: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.nav-item .nav-link:hover {
+    background: black;
+    border-radius: 6px;
+    color: gold;
+}
+#navbar form button {
+    background: rgb(109, 88, 21);
+    color: white;
+    border: 2px solid gold;
+}
+#navbar form button:hover {
+    background:black;
+    color: gold;
+    border: 2px solid white;
+}
+
+
+/* Carousel Starts */
+.carousel-item {
+    /* height: 680px; */
+    height: 110vh;
+    width: 1024px;
+}
+.carousel-item img {
+    background-size: cover;
+    /* height: 680px; */
+    height: 110vh;
+    width: 100%;
+}
+/* Carousel Ends */
+#home {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./assets/bc3.png);
+    background-size: cover;
+    background-position: 90%;
+}
+#home .content {
+    padding-top: 210px;
+    margin-left: 56px;
+}
+#home .content h3{
+    font-size: 50px;
+    color: goldenrod;
+}
+#home .content p {
+    margin-top: 10px;
+    color: goldenrod;
+}
+#btn-1 {
+    width: 150px;
+    height: 36px;
+    margin-top: 20px;
+    background: goldenrod;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn-1:hover {
+    background:black;
+    color: goldenrod;
+    border: 2px solid goldenrod;
+}
+#btn-2 {
+    width: 150px;
+    height: 36px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn-2:hover {
+    background:burlywood;
+    color: white;
+    border: 2px solid white;
+}
