@@ -70,6 +70,8 @@ html ::-webkit-scrollbar {
     width: 100%;
 }
 /* Carousel Ends */
+
+/* Home Starts */
 #home {
     width: 100%;
     height: 100vh;
@@ -88,6 +90,11 @@ html ::-webkit-scrollbar {
 #home .content p {
     margin-top: 10px;
     color: goldenrod;
+}
+.button {
+    width: 320px;
+    display: flex;
+    justify-content: space-evenly;
 }
 #btn-1 {
     width: 150px;
@@ -117,7 +124,129 @@ html ::-webkit-scrollbar {
     cursor: pointer;
 }
 #btn-2:hover {
-    background:burlywood;
+    background:goldenrod;
     color: white;
     border: 2px solid white;
 }
+
+/* Home section Ends  */
+
+/* About Section Starts  */
+#about {
+    height: 100vh;
+}
+.heading {
+    font-size: 50px;
+    text-align: center;
+}
+.abt-cont {
+    display: flex;
+    justify-content: space-between;
+}
+.about-img img{
+    width: 600px;
+    height: 400px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 20px;
+}
+.about-info {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-right: 15px;
+    text-justify: auto;
+
+}
+.abt-btn {
+    width: 150px;
+    height: 36px;
+    margin-top: 20px;
+    background: goldenrod;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.abt-btn:hover {
+    background:black;
+    color: goldenrod;
+    border: 2px solid white;
+}
+/* About Section Ends  */
+
+/* Menu Section Starts  */
+#Menu {
+    height: 100vh;
+  }
+
+  .heading {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .menu-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .row {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .menu-img {
+    background-size: cover;
+  }
+
+  .card {
+    /* perspective: 1500px; */
+    text-transform: uppercase;
+    position: relative;
+    /* width: 300px;
+    height: 450px; */
+    border-radius: 50%;
+    background: rgb(145, 97, 39);
+    background: linear-gradient(45deg, rgba(145, 97, 39, 1) 0%, rgba(238, 225, 146, 1) 50%, rgba(0, 0, 0, 1) 100%);
+  }
+
+  .card__side {
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s ease;
+    backface-visibility: hidden;
+  }
+
+  .card__side--front {
+    background-color: #efeff3;
+  }
+
+  .card__side--back {
+    transform: rotateY(180deg);
+    background-color: #f8f8f8;
+  }
+
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg);
+  }
+
+  .card:hover .card__side--back {
+    transform: rotateY(0);
+  }
+  
+/* Menu Section Ends  */
